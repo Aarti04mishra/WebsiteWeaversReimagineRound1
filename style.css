@@ -1,0 +1,240 @@
+@font-face {
+    font-family: nova;
+    src: url(./ProximaNovaA-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: nova;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: #F1F2F4;
+}
+nav{
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+   background-color: #fff;
+   z-index: 100;
+   position: relative;
+}
+nav .navbar{
+    
+    height: 100%;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ 
+}
+nav .navbar .sidebar_open{
+    font-size: 25px;
+    padding: 5px;
+    cursor: pointer;
+    display: none;
+}
+.logo{
+    width:120px;
+    height:50px;
+}
+.logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.menu .logo_toggle{
+    display: none;
+}
+.navbar_links{
+    display: flex;
+    align-items: center;
+}
+.navbar_links h3{
+    margin: 0 30px;
+    font-size: 1.2vw;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    padding: 10px;
+}
+.navbar_links h3::before{
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 0;
+    height: 1.5px;
+    background-color: #2854E7;
+    transition: 0.3s;
+}
+.navbar_links h3:hover::before{
+   width: 100%;
+}
+.mega-menu{
+    z-index: 999;
+   position: absolute;
+   background-color: #fff;
+   width: 100%;
+   height: 100%;
+   left: 0;
+   bottom: -90%;
+   opacity: 1;
+   visibility: hidden;
+   transition: all ease 0.3s;
+}
+.navbar_categories:hover .mega-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.navbar_Brands:hover .mega-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.content{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 2vw 3vw;
+    gap: 3vw;
+    cursor: pointer;
+    background-color:#fff;
+    justify-content: space-evenly;
+}
+.row{
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+}
+.row header{
+    margin-bottom: .3vw;
+    padding: 0;
+    font-size: 1.2vw;
+    font-weight: 700;
+}
+.sublist{
+    display: flex;
+    flex-direction: column;
+}
+.row h5{
+    line-height: 19px;
+    font-size: 1vw;
+    font-weight: 400;
+    position: relative;
+    width: fit-content;
+}
+.row h5::before{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width:0;
+    height: 1.5px;
+    background-color: #2854E7;
+    transition: 0.3s;
+    display: inline-block;
+    white-space: nowrap;
+}
+.row h5:hover::before{
+
+   width: 100%;
+}
+.Brands header{
+   font-size: 1.3vw;
+   margin-bottom: 2vw;
+}
+.Brands h5{
+    font-size: 1.2vw;
+    line-height: 30px;
+}
+.Brands .content{
+    width: 100%;
+    justify-content: space-around;
+}
+.Brands .row{
+    width: 220px;
+    
+}
+.navbar_icons{
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+}
+.navbar_icons i{
+   font-size:3.2vh;
+   cursor: pointer;
+}
+@media screen and (max-width:1137px) {
+    nav{
+        position: relative;
+        height: 70px;
+        width: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
+    .navbar_links h3{
+        margin: 0 20px;
+        font-size: 15px;
+        font-weight: 500;
+        cursor: pointer;
+        position: relative;
+        padding: 10px;
+    }
+}
+@media (max-width:1055px) {
+    nav .navbar .sidebar_open{
+        display: block;
+    }
+   .menu{
+    position: fixed;
+    height: 100%;
+    width: 320px;
+    top: 0;
+    left: -100%;
+    background-color: #fff;
+    padding: 20px;
+    z-index: 100;
+    transition: all ease 0.4s;
+   }
+   nav.active .menu{
+      left: -0%;
+   }
+   .menu .logo_toggle{
+    display: block;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   }
+   .logo_toggle h3{
+    font-size: 25px;
+   }
+   .logo_toggle i{
+    font-size: 25px;
+    cursor: pointer;
+   }
+   .navbar_links{
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 60px;
+   }
+   .navbar_links h3{
+    font-size: 20px;
+    display: block;
+    margin-top: 20px;
+
+   }
+}

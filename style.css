@@ -176,6 +176,43 @@ nav .navbar .sidebar_open{
    font-size:3.2vh;
    cursor: pointer;
 }
+.search{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    cursor: pointer;
+}
+.searchBox{
+   position: absolute;
+   right: -100%;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   background-color: #fff;
+   align-items: center;
+   padding: 0 30px;
+   transition: 0.5s ease-in-out;
+}
+.searchBox.active{
+    right: 0;
+}
+.searchBox input{
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 50px;
+    font-size: 1.25em;
+    background-color: #fff;
+}
+.searchBox .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25em;
+    gap: 10px;
+}
 @media screen and (max-width:1137px) {
     nav{
         position: relative;
@@ -192,6 +229,9 @@ nav .navbar .sidebar_open{
         cursor: pointer;
         position: relative;
         padding: 10px;
+    }
+    .searchBox input{
+      font-size: 20px; 
     }
 }
 @media (max-width:1055px) {
@@ -235,6 +275,8 @@ nav .navbar .sidebar_open{
     font-size: 20px;
     display: block;
     margin-top: 20px;
-
    }
+   .searchBox input{
+    font-size: 1.8vh; 
+  }
 }

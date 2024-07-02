@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"rel="stylesheet"/>
     <!-- swiperjs -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
@@ -11,58 +12,77 @@
 </head>
 <body>
     <nav>
-      <div class="navbar">
-        <!-- menubar -->
-        <i class="ri-menu-line sidebar_open"></i>
-        <!-- logo Section -->
-        <div class="logo">
-            <img src="./tShvxlSqc5whgHOCsyQA5WUh4TK1703172089097_200x200-removebg-preview.png" alt="">
+        <div class="navbar">
+          <!-- menubar -->
+          <i class="ri-menu-line sidebar_open"></i>
+          <!-- logo Section -->
+          <div class="logo">
+              <img src="./images/tShvxlSqc5whgHOCsyQA5WUh4TK1703172089097_200x200-removebg-preview.png" alt="">
+          </div>
+          <!-- Navigation Links -->
+          <div class="menu">
+              <div class="logo_toggle">
+                  <span><h3>Menu</h3></span>
+                  <i class="ri-close-large-fill sidebar_close"></i>
+              </div>
+              <div class="navbar_links">
+                  <h3>Home</h3>
+                  <div class="navbar_categories">
+                      <h3>Categories</h3>
+                  </div>
+                  <h3>Deals</h3>
+                  <h3>Top Offers</h3>
+                  <h3>New Arrivals</h3>
+                  <div class="navbar_Brands">
+                      <h3>Brands</h3>
+                  </div>
+              </div> 
+          </div>
+          <!-- icons section -->
+          <div class="navbar_icons">
+              <i class="ri-search-line searchBtn"></i>
+              <i class="ri-user-3-line"></i>
+              <i class="ri-shopping-cart-2-line"></i>
+          </div>
+          <!-- searchbox -->
+          <div class="searchBox">
+             <input type="text" placeholder="Search for Products,Brands and More">
+             <div class="search">
+              <div class="icon">
+                  <i class="ri-search-line"></i>
+                  <i class="ri-close-large-line closeBtn"></i>
+              </div>
+          </div>
+          </div>
         </div>
-        <!-- Navigation Links -->
-        <div class="menu">
-            <div class="logo_toggle">
-                <span><h3>Menu</h3></span>
-                <i class="ri-close-large-fill sidebar_close"></i>
-            </div>
-            <div class="navbar_links">
-                <h3>Home</h3>
-                <div class="navbar_categories">
-                    <h3>Categories</h3>
-                </div>
-                <h3>Deals</h3>
-                <h3>Top Offers</h3>
-                <h3>New Arrivals</h3>
-                <div class="navbar_Brands">
-                    <h3>Brands</h3>
-                </div>
-            </div> 
-        </div>
-        <!-- icons section -->
-        <div class="navbar_icons">
-            <i class="ri-search-line searchBtn"></i>
-            <i class="ri-user-3-line"></i>
-            <i class="ri-shopping-cart-2-line"></i>
-        </div>
-        <!-- searchbox -->
-        <div class="searchBox">
-           <input type="text" placeholder="Search for Products,Brands and More">
-           <div class="search">
-            <div class="icon">
-                <i class="ri-search-line"></i>
-                <i class="ri-close-large-line closeBtn"></i>
-            </div>
-        </div>
-        </div>
-      </div>
-    </nav>
-    <div class="main">
+      </nav>
+      <div class="main">
         <div class="page1">
-         </div>
-         <div class="page2">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <img src="https://marketing.x.com/content/dam/marketing-twitter/apac/en_gb/success-stories/flipkart-bigbillionmuqabla-2021/masthead.jpg.twimg.1920.jpg" alt="Ad 1">
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="https://media.fashionnetwork.com/m/9bbd/9239/870e/e447/99b3/8373/ab91/11fa/889e/3896/3896.jpeg" alt="Ad 2">
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="https://i.pinimg.com/originals/eb/7e/c6/eb7ec6677c9e7f769787d781d26027fe.png" alt="Ad 3">
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="https://gumlet-images.assettype.com/afaqs%2F2022-06%2Fa43ee35b-18cb-4c7f-ac17-63c14a79207f%2FAlia_Bhatt_Flipkart_Fashion_EOSS.jpg?format=webp&w=480&dpr=2.6" alt="Ad 4">
+                  </div>
+              </div>
+              <!-- Custom Navigation -->
+              <div class="custom-next"><i class="fas fa-chevron-right"></i></div>
+              <div class="custom-prev"><i class="fas fa-chevron-left"></i></div>
+          </div>
+           </div>
+        <div class="page2">
             <h1>Shop Our Products</h1>
             <h5>Top view in this week</h5>
             <div class="button-container">
-                <button>Featured</button>
+                <button class="active">Featured</button>
                 <button>Top Rated</button>
                 <button>On Sale</button>
             </div>
@@ -72,55 +92,55 @@
                         <div class="slide">
                             <!-- Product 1 -->
                             <div class="product">
-                                <img src="https://i.pinimg.com/564x/7c/bc/df/7cbcdf91098b720ae0ae6eda084946df.jpg" alt="Product 1">
-                                <div class="description">Product 1 Description</div>
-                                <div class="price">$10.00</div>
+                                <div class="image"><img src="https://i.pinimg.com/736x/0b/b0/33/0bb033e6d9af92d583a5aa56615a3151.jpg" alt="Product 1"></div>
+                                <div class="description">SONY WH1000XM4/SM Bluetooth Gaming headset</div>
+                                <div class="price">₹19,990</div>
                             </div>
                             <div class="product">
-                                <img src="https://i.pinimg.com/736x/76/1a/c6/761ac68a62735b398c1bdebeb0690a41.jpg" alt="Product 1">
-                                <div class="description">Product 1 Description</div>
-                                <div class="price">$10.00</div>
+                                <div class="image"> <img src="https://i.pinimg.com/736x/76/1a/c6/761ac68a62735b398c1bdebeb0690a41.jpg" alt="Product 1"></div>
+                                <div class="description">HOTSTYLE <br>TPU Training & Gym Shoes For Men</div>
+                                <div class="price">₹699</div>
                             </div>
                             <div class="product">
-                                <img src="product1.jpg" alt="Product 1">
-                                <div class="description">Product 1 Description</div>
-                                <div class="price">$10.00</div>
+                               
+                                <div class="image"> <img src="https://i.pinimg.com/564x/c8/9f/dc/c89fdc6754493311af59859a3b28ba95.jpg" alt="Product 1"></div>
+                                <div class="description">Casual Sleeveless Solid Women White Top</div>
+                                <div class="price">₹599</div>
                             </div>
                             <div class="product">
-                                <img src="product1.jpg" alt="Product 1">
-                                <div class="description">Product 1 Description</div>
-                                <div class="price">$10.00</div>
+                                
+                                <div class="image"><img src="https://media.everlane.com/images/c_fill,w_384,ar_250:312,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/771a67dc_9ac0/womens-linen-way-high-drape-short-bone" alt="Product 1"></div>
+                                <div class="description">The Linen Way-High Drape Dress</div>
+                                <div class="price">₹2010</div>
                             </div>
                             <div class="product">
-                                <img src="product1.jpg" alt="Product 1">
-                                <div class="description">Product 1 Description</div>
-                                <div class="price">$10.00</div>
+                                
+                                <div class="image"><img src="https://i.pinimg.com/564x/a0/31/a4/a031a4d1a6dc75f0def57c111fd66f14.jpg" alt="Product 1"></div>
+                                <div class="description">Luxurious Leather Basket Carry Bag </div>
+                                <div class="price">₹769</div>
                             </div>
                             <div class="product">
-                                <img src="https://i.pinimg.com/564x/7c/bc/df/7cbcdf91098b720ae0ae6eda084946df.jpg" alt="Product 1">
-                                <div class="description">Product 1 Description</div>
-                                <div class="price">$10.00</div>
+                               
+                                <div class="image"> <img src="https://i.pinimg.com/564x/05/21/d9/0521d9e2c19445735b466e2afcddecf2.jpg" alt="Product 1"></div>
+                                <div class="description">AVDIP Teddy Bear Brown Color</div>
+                                <div class="price">₹299</div>
                             </div>
                             <div class="product">
-                                <img src="product1.jpg" alt="Product 1">
-                                <div class="description">Product 1 Description</div>
-                                <div class="price">$10.00</div>
+                                <div class="image"><img src="https://i.pinimg.com/564x/14/b0/f7/14b0f75f69c4d2ebc871f9073526f410.jpg" alt="Product 1"></div>
+                                <div class="description">ASUS Zenbook Duo UX8406MAPS99T Dual Touchscreen Laptop</div>
+                                <div class="price">₹49,990</div>
                             </div>
                             <div class="product">
-                                <img src="product1.jpg" alt="Product 1">
-                                <div class="description">Product 1 Description</div>
-                                <div class="price">$10.00</div>
+                                <div class="image"><img src="https://i.pinimg.com/564x/8a/8a/28/8a8a287c7fe5784249ca0de3f1f814d2.jpg" alt="Product 1"></div>
+                                <div class="description">Crew Neck Short-Sleeve T-Shirts</div>
+                                <div class="price">₹499</div>
                             </div>
                             <div class="product">
-                                <img src="product1.jpg" alt="Product 1">
-                                <div class="description">Product 1 Description</div>
-                                <div class="price">$10.00</div>
+                               <div class="image"> <img src="https://i.pinimg.com/736x/47/d1/9f/47d19f938ebe4fd2bf6ace4eb56a4165.jpg" alt="Product 1"></div>
+                                <div class="description">Apple Airpods Pro with MagSafe Case</div>
+                                <div class="price">₹19,990</div>
                             </div>
-                            <div class="product">
-                                <img src="product1.jpg" alt="Product 1">
-                                <div class="description">Product 1 Description</div>
-                                <div class="price">$10.00</div>
-                            </div>
+                           
                         </div>
                     </div>
                 </div>
@@ -141,55 +161,55 @@
                 </div>        
                 <div class="right">
                     <div class="nav">
-                        <a href="#" class="active">All</a>
-                        <a href="#">Clothing</a>
-                        <a href="#">Footwear</a>
-                        <a href="#">Accessories</a>
-                        <a href="#">Beauty & Personal Care</a>
-                        <a href="#">View All</a> <!-- Added View All -->
+                        <a  class="active">All</a>
+                        <a>Clothing</a>
+                        <a>Footwear</a>
+                        <a>Accessories</a>
+                        <a>Beauty & Personal Care</a>
+                        <a>View All</a> <!-- Added View All -->
                     </div>
                     <div class="products">
                         <div class="product-box">
                             <div class="product-image">
-                                <img src="https://i.pinimg.com/236x/e1/a5/c7/e1a5c71aabfbdb6b56e2ba32fdd4f95d.jpg" alt="Product Image">
+                                <img src="https://i.pinimg.com/564x/79/59/88/7959883ae74ba18758f0aa09286a4701.jpg" alt="Product Image">
                             </div>
-                            <div class="product-name">Thin Coat Lightly</div>
-                            <div class="product-price">$88.00 - $89.00</div>
+                            <div class="product-name">High-Waisted Loose 2-Buttons Shorts</div>
+                            <div class="product-price">₹299</div>
                         </div>
                         <div class="product-box">
                             <div class="product-image">
-                                <img src="https://i.pinimg.com/564x/d8/9a/e1/d89ae17a58f6a1f41f222276561844ae.jpg" alt="Product Image">
+                                <img src="https://i.pinimg.com/564x/03/d4/f3/03d4f34797557907f3a4fb378ecdb4f9.jpg" alt="Product Image">
                             </div>
-                            <div class="product-name">Small Fashion Bag</div>
-                            <div class="product-price">$99.00</div>
+                            <div class="product-name">Woven Leather Handbag- Small/ Off White</div>
+                            <div class="product-price">₹1,679</div>
                         </div>
                         <div class="product-box">
                             <div class="product-image">
-                                <img src="https://via.placeholder.com/150" alt="Product Image">
+                                <img src="https://i.pinimg.com/564x/b2/78/43/b278431ad414046c7e3190f805baeff0.jpg" alt="Product Image">
                             </div>
-                            <div class="product-name">Funnel collar puffer jacket</div>
-                            <div class="product-price">$87.00 - $89.00</div>
+                            <div class="product-name">Casual Women Puffer Jacket-Cotton Padded</div>
+                            <div class="product-price">₹999</div>
                         </div>
                         <div class="product-box">
                             <div class="product-image">
-                                <img src="https://via.placeholder.com/150" alt="Product Image">
+                                <img src="https://i.pinimg.com/564x/c3/13/a9/c313a9b3cd06712f07c0a7d0343eda34.jpg" alt="Product Image">
                             </div>
-                            <div class="product-name">Pink Shoes Fashionable</div>
-                            <div class="product-price">$32.00</div>
+                            <div class="product-name">Running Vulcanized White Shoes Femaile Chuncky Sneakers </div>
+                            <div class="product-price">₹1200</div>
                         </div>
                         <div class="product-box">
                             <div class="product-image">
-                                <img src="https://via.placeholder.com/150" alt="Product Image">
+                                <img src="https://i.pinimg.com/564x/09/27/d6/0927d65cde17389cbe6f7bb3d51ed4aa.jpg" alt="Product Image">
                             </div>
-                            <div class="product-name">Jacket Collar</div>
-                            <div class="product-price">$40.00 - $45.00</div>
+                            <div class="product-name">ButterFly Necklace For Women</div>
+                            <div class="product-price">₹299</div>
                         </div>
                         <div class="product-box">
                             <div class="product-image">
-                                <img src="https://via.placeholder.com/150" alt="Product Image">
+                                <img src="https://i.pinimg.com/564x/50/0a/3b/500a3bc054dbee0d310210a65a62ed73.jpg" alt="Product Image">
                             </div>
-                            <div class="product-name">Short Jeans</div>
-                            <div class="product-price">$32.00</div>
+                            <div class="product-name">Criss Cross Back Ruffle Hem Camoi Top</div>
+                            <div class="product-price">₹599</div>
                         </div>
                     </div>
                 </div>
@@ -197,63 +217,89 @@
             
          </div>
          <div class="page3">
-            <div class="advertisement">
-                <img src="./stock-vector-hello-summer-sale-with-wooden-sign-and-tropical-beach-elements-vector-of-summer-sale-banner-or-2464331705-transformed.jpeg" alt="Advertisement Image">
-            </div>
+            <section class="promo-section">
+                <div class="promo-item">
+                    <div class="promo-container">
+                        <img src="https://i.pinimg.com/564x/77/24/a6/7724a610d22ee8aa6a613041ad2b98f6.jpg" alt="The Sandal Shop">
+                    </div>
+                    <div class="promo-content">
+                        <h2>Footwear</h2>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+                <div class="promo-item">
+                    <div class="promo-container">
+                        <img src="https://i.pinimg.com/564x/3f/8a/af/3f8aafd8651f64b53e381c0c506cd98e.jpg" alt="Best Selling Tees">
+                    </div>
+                    <div class="promo-content">
+                        <h2>Best Selling Tees</h2>
+                        <button>Shop Tees</button>
+                    </div>
+                </div>
+                <div class="promo-item">
+                    <div class="promo-container">
+                        <img src="https://i.pinimg.com/564x/c0/ac/e9/c0ace9e4b0bdfb9e086b3601b888e775.jpg" alt="New Arrivals">
+                    </div>
+                    <div class="promo-content">
+                        <h2>Electronics</h2>
+                        <button>Shop the Latest</button>
+                    </div>
+                </div>
+            </section>
          </div>
          <div class="page5">
             <div class="container2">
                 <div class="right">
                     <div class="nav">
-                        <a href="#" class="active">All</a>
-                        <a href="#">Clothing</a>
-                        <a href="#">Footwear</a>
-                        <a href="#">Accessories</a>
-                        <a href="#">Grooming</a>
-                        <a href="#">View All</a> <!-- Added View All -->
+                        <a class="active">All</a>
+                        <a>Clothing</a>
+                        <a>Footwear</a>
+                        <a>Accessories</a>
+                        <a>Grooming</a>
+                        <a>View All</a> 
                     </div>
                     <div class="products">
                         <div class="product-box">
                             <div class="product-image">
-                                <img src="https://i.pinimg.com/236x/e1/a5/c7/e1a5c71aabfbdb6b56e2ba32fdd4f95d.jpg" alt="Product Image">
+                                <img src="https://i.pinimg.com/564x/1a/54/31/1a54316fc74550e9fec38b42b0782cf8.jpg" alt="Product Image">
                             </div>
-                            <div class="product-name">Winter Coat with Hat</div>
-                            <div class="product-price">$88.00 - $89.00</div>
+                            <div class="product-name">Round Neck Short Sleeve Cotton T-Shirts</div>
+                            <div class="product-price">₹399</div>
                         </div>
                         <div class="product-box">
                             <div class="product-image">
                                 <img src="https://i.pinimg.com/736x/f4/de/33/f4de3353c4db98e57f83217ce98dd52f.jpg" alt="Product Image">
                             </div>
-                            <div class="product-name">Leather Belts</div>
-                            <div class="product-price">$99.00</div>
+                            <div class="product-name">Men Formal Casual,Party Leather Belt</div>
+                            <div class="product-price">₹349</div>
                         </div>
                         <div class="product-box">
                             <div class="product-image">
-                                <img src="https://via.placeholder.com/150" alt="Product Image">
+                                <img src="https://i.pinimg.com/564x/78/ef/9d/78ef9d459126fa10c1091dbcbf89d249.jpg" alt="Product Image">
                             </div>
-                            <div class="product-name">Men's office t-shirts</div>
-                            <div class="product-price">$87.00 - $89.00</div>
+                            <div class="product-name">Casual Shirts - Light Blue </div>
+                            <div class="product-price">₹549</div>
                         </div>
                         <div class="product-box">
                             <div class="product-image">
-                                <img src="https://via.placeholder.com/150" alt="Product Image">
+                                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/deodorant/k/8/r/-original-imagwfhxrjhhdszp.jpeg?q=70" alt="Product Image">
                             </div>
-                            <div class="product-name">Perfume</div>
-                            <div class="product-price">$32.00</div>
+                            <div class="product-name">Wild Stone Ultra Sensual Perfume</div>
+                            <div class="product-price">₹333</div>
                         </div>
                         <div class="product-box">
                             <div class="product-image">
-                                <img src="https://via.placeholder.com/150" alt="Product Image">
+                                <img src="https://i.pinimg.com/564x/3c/92/6a/3c926a8d031f417035cc4126f9ecddf0.jpg" alt="Product Image">
                             </div>
-                            <div class="product-name">Gray jacket</div>
-                            <div class="product-price">$40.00 - $45.00</div>
+                            <div class="product-name">Nike Air Monarch Training Shoes</div>
+                            <div class="product-price">₹899</div>
                         </div>
                         <div class="product-box">
                             <div class="product-image">
-                                <img src="https://via.placeholder.com/150" alt="Product Image">
+                                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/k/n/t/two-noise-original-imaggy72wvh8hvge.jpeg?q=70" alt="Product Image">
                             </div>
-                            <div class="product-name">Red cap</div>
-                            <div class="product-price">$32.00</div>
+                            <div class="product-name">Noise three With 70 hours Playtime</div>
+                            <div class="product-price">₹1,999</div>
                         </div>
                     </div>
                 </div>
@@ -279,55 +325,41 @@
                     <div class="slider">
                         <div class="slide">
                             <div class="product">
-                                <img src="https://i.pinimg.com/564x/7c/bc/df/7cbcdf91098b720ae0ae6eda084946df.jpg" alt="Product 1">
-                                <div class="description">Product 1 Description</div>
-                                <div class="price">$10.00</div>
+                                <div class="image"><img src="https://i.pinimg.com/564x/6e/03/2f/6e032f3fb0f0bb6bd1b32676a58fc246.jpg" alt="Product 1"></div>
+                                <div class="description">SONY WH1000XM4/SM Bluetooth Gaming headset</div>
+                                <div class="price">₹19,990</div>
                             </div>
                             <div class="product">
-                                <img src="https://i.pinimg.com/736x/76/1a/c6/761ac68a62735b398c1bdebeb0690a41.jpg" alt="Product 1">
-                                <div class="description">Product 1 Description</div>
-                                <div class="price">$10.00</div>
+                                <div class="image"><img src="https://i.pinimg.com/736x/76/1a/c6/761ac68a62735b398c1bdebeb0690a41.jpg" alt="Product 1"></div>
+                                <div class="description">HOTSTYLETPU Training & Gym Shoes For Men</div>
+                                <div class="price">₹699</div>
                             </div>
                             <div class="product">
-                                <img src="product1.jpg" alt="Product 1">
-                                <div class="description">Product 1 Description</div>
-                                <div class="price">$10.00</div>
+                                <div class="image"><img src="https://i.pinimg.com/564x/45/a4/73/45a4730f4d3dce67cb40700a5488faa0.jpg" alt="Product 1"></div>
+                                <div class="description">Haier 651 L Frost Free Side by Side Convertible Refrigerator</div>
+                                <div class="price">₹1,99,990</div>
                             </div>
                             <div class="product">
-                                <img src="product1.jpg" alt="Product 1">
-                                <div class="description">Product 1 Description</div>
-                                <div class="price">$10.00</div>
+                                <div class="image"><img src="https://i.pinimg.com/564x/72/d4/05/72d40563518e875e6254e463006d1d8d.jpg" alt="Product 1"></div>
+                                <div class="description">Apple AirPods Pro 2.</div>
+                                <div class="price">₹19,990</div>
                             </div>
                             <div class="product">
-                                <img src="product1.jpg" alt="Product 1">
-                                <div class="description">Product 1 Description</div>
-                                <div class="price">$10.00</div>
+                                <div class="image"><img src="https://i.pinimg.com/564x/1b/e9/a3/1be9a32963f426906b1ddb2847157b8f.jpg" alt="Product 1"></div>
+                                <div class="description">iPad Air 5 Purple</div>
+                                <div class="price">₹17,999</div>
                             </div>
                             <div class="product">
-                                <img src="https://i.pinimg.com/564x/7c/bc/df/7cbcdf91098b720ae0ae6eda084946df.jpg" alt="Product 1">
-                                <div class="description">Product 1 Description</div>
-                                <div class="price">$10.00</div>
+                                <div class="image"><img src="https://i.pinimg.com/564x/f9/4b/49/f94b49ca3b8850d798a09ced3b5ad14f.jpg" alt="Product 1"></div>
+                                <div class="description">Casual Pants Drawstring Low Waist Baggy Trouser</div>
+                                <div class="price">₹1,999</div>
                             </div>
                             <div class="product">
-                                <img src="product1.jpg" alt="Product 1">
-                                <div class="description">Product 1 Description</div>
-                                <div class="price">$10.00</div>
+                                <div class="image"><img src="https://i.pinimg.com/564x/11/d4/d5/11d4d5a614e28cb41b44158323a649a8.jpg" alt="Product 1"></div>
+                                <div class="description">IBANEZ PF15-BK Acoustic Guitar </div>
+                                <div class="price">₹12,849</div>
                             </div>
-                            <div class="product">
-                                <img src="product1.jpg" alt="Product 1">
-                                <div class="description">Product 1 Description</div>
-                                <div class="price">$10.00</div>
-                            </div>
-                            <div class="product">
-                                <img src="product1.jpg" alt="Product 1">
-                                <div class="description">Product 1 Description</div>
-                                <div class="price">$10.00</div>
-                            </div>
-                            <div class="product">
-                                <img src="product1.jpg" alt="Product 1">
-                                <div class="description">Product 1 Description</div>
-                                <div class="price">$10.00</div>
-                            </div>
+                          
                         </div>
                     </div>
                 </div>
@@ -339,14 +371,43 @@
             <div class="reviews-heading">
                 Customer Reviews
             </div>
-            <div class="swiper-container mySwiper">
+             <div class="swiper-container mySwiper">
                 <div class="swiper-wrapper">
+                    <div class="swiper-slide"> 
+                        <div class="review-container">
+                            <div class="review-left">
+                             <h3 class="review-title">The Reviews Are In</h3>
+                             <div class="review-rating">
+                               
+                                 <i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i>
+             
+                             </div>
+                             <div class="review-div">
+                                 <div class="review">
+                                     <h3>Wonderful</h3>
+                                 </div>
+                                 <div class="review-text">
+                                     <h3>
+                                        "I love these denim shorts! They fit perfectly and are super comfortable, with just the right amount of stretch. The high-waisted design is flattering and pairs well with everything in my wardrobe."</h3>
+                                 </div>
+                             </div>
+                             <p class="customer-id">-Akanksh Aku</p>
+                            </div>
+                            <div class="review-right">
+                             <div class="image-containers">
+                                 <img src="https://i.pinimg.com/564x/cc/fd/2c/ccfd2c17c7cec6f899ef38a9e04fa260.jpg" alt="Customer uploaded image">
+                             </div>
+                     
+                            </div>
+                        </div>
+                        </div>
                   <div class="swiper-slide">
+                    
                    <div class="review-container">
                        <div class="review-left">
                         <h3 class="review-title">The Reviews Are In</h3>
                         <div class="review-rating">
-                            <!-- Rating icons go here -->
+                        
                             <i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i>
         
                         </div>
@@ -368,55 +429,31 @@
                        </div>
                    </div>
                   </div>
+             
                   <div class="swiper-slide"> 
                     <div class="review-container">
                         <div class="review-left">
                          <h3 class="review-title">The Reviews Are In</h3>
                          <div class="review-rating">
-                             <!-- Rating icons go here -->
+                             
                              <i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i>
          
                          </div>
                          <div class="review-div">
                              <div class="review">
-                                 <h3>Terrific</h3>
+                                 <h3>Beautiful❤️</h3>
                              </div>
                              <div class="review-text">
-                                 <h3>Really awesome shoes the quality is no need to say only very excellent beautiful superb 😘😘🤩</h3>
+                                 <h3>"I absolutely adore this necklace! The design is elegant and eye-catching. It adds a lovely touch of sparkle to any outfit, Highly recommend!"
+
+                                 </h3>
                              </div>
                          </div>
                          <p class="customer-id">-Akanksh Aku</p>
                         </div>
                         <div class="review-right">
                          <div class="image-containers">
-                             <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/shoe/q/b/g/6-na-224-labbin-black-original-imagzh4sm6tza6yk.jpeg?q=90" alt="Customer uploaded image">
-                         </div>
-                 
-                        </div>
-                    </div>
-                    </div>
-                  <div class="swiper-slide"> 
-                    <div class="review-container">
-                        <div class="review-left">
-                         <h3 class="review-title">The Reviews Are In</h3>
-                         <div class="review-rating">
-                             <!-- Rating icons go here -->
-                             <i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i>
-         
-                         </div>
-                         <div class="review-div">
-                             <div class="review">
-                                 <h3>Terrific</h3>
-                             </div>
-                             <div class="review-text">
-                                 <h3>Really awesome shoes the quality is no need to say only very excellent beautiful superb 😘😘🤩</h3>
-                             </div>
-                         </div>
-                         <p class="customer-id">-Akanksh Aku</p>
-                        </div>
-                        <div class="review-right">
-                         <div class="image-containers">
-                             <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/shoe/q/b/g/6-na-224-labbin-black-original-imagzh4sm6tza6yk.jpeg?q=90" alt="Customer uploaded image">
+                             <img src="https://i.pinimg.com/564x/2c/2b/56/2c2b56f697410067b6cef311e11641f3.jpg" alt="Customer uploaded image">
                          </div>
                  
                         </div>
@@ -429,85 +466,48 @@
                 <div class="swiper-button-custom swiper-button-next-custom">
                     <i class="ri-arrow-right-s-line"></i>
                 </div>
-              </div>
+              </div> 
          </div>
-         <footer class="footer">
-            <div class="footer-section">
-              <h4>ABOUT</h4>
-              <ul>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Flipkart Stories</a></li>
-                <li><a href="#">Press</a></li>
-                <li><a href="#">Corporate Information</a></li>
-              </ul>
-            </div>
-            <div class="footer-section">
-              <h4>GROUP COMPANIES</h4>
-              <ul>
-                <li><a href="#">Myntra</a></li>
-                <li><a href="#">Cleartrip</a></li>
-                <li><a href="#">Shopsy</a></li>
-              </ul>
-            </div>
-            <div class="footer-section">
-              <h4>HELP</h4>
-              <ul>
-                <li><a href="#">Payments</a></li>
-                <li><a href="#">Shipping</a></li>
-                <li><a href="#">Cancellation & Returns</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Report Infringement</a></li>
-              </ul>
-            </div>
-            <div class="footer-section">
-              <h4>CONSUMER POLICY</h4>
-              <ul>
-                <li><a href="#">Cancellation & Returns</a></li>
-                <li><a href="#">Terms Of Use</a></li>
-                <li><a href="#">Security</a></li>
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">Sitemap</a></li>
-                <li><a href="#">EPR Compliance</a></li>
-              </ul>
-            </div>
-            <div class="footer-line"></div>
-            <div class="footer-section">
-                <h4>Mail Us:</h4>
-                <p>Flipkart Internet Private Limited, Buildings Alyssa, Begonia & Clove Embassy Tech Village, Outer Ring Road, Devarabeesanahalli Village, Bengaluru, 560103, Karnataka, India</p>
-                <h4>Social:</h4>
-                <ul class="social-links">
-                  <li><a href="#"><i class="ri-facebook-circle-line"></i></a></li>
-                  <li><a href="#"><i class="ri-twitter-x-line"></i></a></li>
-                  <li><a href="#"><i class="ri-youtube-line"></i></a></li>
-                </ul>
-              </div>
-              
-            <div class="footer-section">
-              <h4>Registered Office Address:</h4>
-              <p>Flipkart Internet Private Limited, Buildings Alyssa, Begonia & Clove Embassy Tech Village, Outer Ring Road, Devarabeesanahalli Village, Bengaluru, 560103, Karnataka, India CIN : U51109KA2012PTC066107 Telephone: 044-45614700</p>
-            </div>
-          </footer>
-          <div class="footer-extra">
-            <div class="footer-links">
-                <a href="#"><i class="ri-store-line"></i> Become a seller</a>
-                <a href="#"><i class="ri-shining-2-fill"></i> Advertise</a>
-                <a href="#"><i class="ri-gift-2-line"></i> Gift Cards</a>
-                <a href="#"><i class="ri-question-line"></i> Help Center</a>
-                <span>©️2007-2024 flipkart.com</span>
-            </div>
-            <div class="payment-methods">
-                <div class="card">
-                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/payment-method-c454fb.svg" alt="">
+         <footer>
+            <div class="footer-container">
+                <div class="footer-section about">
+                    <h2>About Us</h2>
+                    <p>Learn more about Flipkart, our journey, and what makes us unique.</p>
                 </div>
-                
-                <!-- Add more payment cards as needed -->
+                <div class="footer-section links">
+                    <h2>Useful Links</h2>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact">
+                    <h2>Contact Us</h2>
+                    <ul>
+                        <li><span>Address:</span> 123 Flipkart St, Bangalore, India</li>
+                        <li><span>Phone:</span> +91 1234567890</li>
+                        <li><span>Email:</span> support@flipkart.com</li>
+                    </ul>
+                </div>
+                <div class="footer-section follow">
+                    <h2>Follow Us</h2>
+                    <div class="social-icons">
+                        <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+                        <a href="#"><i class="ri-twitter-x-line"></i></a>
+                        <a href="#"><i class="ri-instagram-fill"></i></a>
+                        <a href="#"><i class="ri-linkedin-box-fill"></i></a>
+                    </div>
+                </div>
             </div>
-        </div>
-        
-    </div>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Flipkart. All rights reserved.</p>
+            </div>
+        </footer>
+      </div>
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
+   
 </body>
 </html>
